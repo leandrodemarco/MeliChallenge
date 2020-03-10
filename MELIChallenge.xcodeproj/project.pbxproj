@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		138BF88E6D99F3FDFCBCC68E /* Pods_MELIChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6724D9ECD06DC425211D396 /* Pods_MELIChallenge.framework */; };
+		B564D0652416EC80004575FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D0642416EC80004575FF /* AppDelegate.m */; };
+		B564D06B2416EC80004575FF /* MLCSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D06A2416EC80004575FF /* MLCSearchController.m */; };
+		B564D06E2416EC80004575FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B564D06C2416EC80004575FF /* Main.storyboard */; };
+		B564D0702416EC87004575FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B564D06F2416EC87004575FF /* Assets.xcassets */; };
+		B564D0732416EC87004575FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B564D0712416EC87004575FF /* LaunchScreen.storyboard */; };
+		B564D0762416EC87004575FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D0752416EC87004575FF /* main.m */; };
+		B564D0802416F4CE004575FF /* MLCSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D07F2416F4CE004575FF /* MLCSearchTableViewCell.m */; };
+		B564D082241703DF004575FF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B564D081241703DF004575FF /* Podfile */; };
+		B564D087241704F1004575FF /* MLCApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D086241704F1004575FF /* MLCApiClient.m */; };
+		B564D08A24170C52004575FF /* MLCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D08924170C52004575FF /* MLCItem.m */; };
+		B564D08D24170C6F004575FF /* MLCDetailedItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D08C24170C6F004575FF /* MLCDetailedItemViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12C16E94078FA5E6D8FB491A /* Pods-MELIChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELIChallenge.release.xcconfig"; path = "Target Support Files/Pods-MELIChallenge/Pods-MELIChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		70F0E1B6353436BD2ED9553A /* Pods-MELIChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELIChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MELIChallenge/Pods-MELIChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B564D0602416EC80004575FF /* MELIChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELIChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B564D0632416EC80004575FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B564D0642416EC80004575FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B564D0692416EC80004575FF /* MLCSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCSearchController.h; sourceTree = "<group>"; };
+		B564D06A2416EC80004575FF /* MLCSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCSearchController.m; sourceTree = "<group>"; };
+		B564D06D2416EC80004575FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B564D06F2416EC87004575FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B564D0722416EC87004575FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B564D0742416EC87004575FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B564D0752416EC87004575FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B564D07E2416F4CE004575FF /* MLCSearchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCSearchTableViewCell.h; sourceTree = "<group>"; };
+		B564D07F2416F4CE004575FF /* MLCSearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCSearchTableViewCell.m; sourceTree = "<group>"; };
+		B564D081241703DF004575FF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B564D085241704F1004575FF /* MLCApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCApiClient.h; sourceTree = "<group>"; };
+		B564D086241704F1004575FF /* MLCApiClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCApiClient.m; sourceTree = "<group>"; };
+		B564D08824170C52004575FF /* MLCItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCItem.h; sourceTree = "<group>"; };
+		B564D08924170C52004575FF /* MLCItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCItem.m; sourceTree = "<group>"; };
+		B564D08B24170C6F004575FF /* MLCDetailedItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCDetailedItemViewController.h; sourceTree = "<group>"; };
+		B564D08C24170C6F004575FF /* MLCDetailedItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCDetailedItemViewController.m; sourceTree = "<group>"; };
+		C6724D9ECD06DC425211D396 /* Pods_MELIChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELIChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B564D05D2416EC80004575FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138BF88E6D99F3FDFCBCC68E /* Pods_MELIChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10048CC171994F93A93B4EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6724D9ECD06DC425211D396 /* Pods_MELIChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88350BE40C4B5507ACBC0C35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70F0E1B6353436BD2ED9553A /* Pods-MELIChallenge.debug.xcconfig */,
+				12C16E94078FA5E6D8FB491A /* Pods-MELIChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B564D0572416EC80004575FF = {
+			isa = PBXGroup;
+			children = (
+				B564D0622416EC80004575FF /* MELIChallenge */,
+				B564D0612416EC80004575FF /* Products */,
+				88350BE40C4B5507ACBC0C35 /* Pods */,
+				10048CC171994F93A93B4EB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B564D0612416EC80004575FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B564D0602416EC80004575FF /* MELIChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B564D0622416EC80004575FF /* MELIChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				B564D084241704CF004575FF /* Model */,
+				B564D07D2416F4B5004575FF /* Views */,
+				B564D07C2416F02B004575FF /* ViewControllers */,
+				B564D0632416EC80004575FF /* AppDelegate.h */,
+				B564D0642416EC80004575FF /* AppDelegate.m */,
+				B564D06C2416EC80004575FF /* Main.storyboard */,
+				B564D081241703DF004575FF /* Podfile */,
+				B564D06F2416EC87004575FF /* Assets.xcassets */,
+				B564D0712416EC87004575FF /* LaunchScreen.storyboard */,
+				B564D0742416EC87004575FF /* Info.plist */,
+				B564D0752416EC87004575FF /* main.m */,
+			);
+			path = MELIChallenge;
+			sourceTree = "<group>";
+		};
+		B564D07C2416F02B004575FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B564D0692416EC80004575FF /* MLCSearchController.h */,
+				B564D06A2416EC80004575FF /* MLCSearchController.m */,
+				B564D08B24170C6F004575FF /* MLCDetailedItemViewController.h */,
+				B564D08C24170C6F004575FF /* MLCDetailedItemViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B564D07D2416F4B5004575FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B564D07E2416F4CE004575FF /* MLCSearchTableViewCell.h */,
+				B564D07F2416F4CE004575FF /* MLCSearchTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B564D084241704CF004575FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B564D085241704F1004575FF /* MLCApiClient.h */,
+				B564D086241704F1004575FF /* MLCApiClient.m */,
+				B564D08824170C52004575FF /* MLCItem.h */,
+				B564D08924170C52004575FF /* MLCItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B564D05F2416EC80004575FF /* MELIChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B564D0792416EC87004575FF /* Build configuration list for PBXNativeTarget "MELIChallenge" */;
+			buildPhases = (
+				6F3E58C61FACCDD100504CCC /* [CP] Check Pods Manifest.lock */,
+				B564D05C2416EC80004575FF /* Sources */,
+				B564D05D2416EC80004575FF /* Frameworks */,
+				B564D05E2416EC80004575FF /* Resources */,
+				34BCED640341063326B9F5E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MELIChallenge;
+			productName = MELIChallenge;
+			productReference = B564D0602416EC80004575FF /* MELIChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B564D0582416EC80004575FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Leandro Demarco Vedelago";
+				TargetAttributes = {
+					B564D05F2416EC80004575FF = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = B564D05B2416EC80004575FF /* Build configuration list for PBXProject "MELIChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B564D0572416EC80004575FF;
+			productRefGroup = B564D0612416EC80004575FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B564D05F2416EC80004575FF /* MELIChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B564D05E2416EC80004575FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B564D0732416EC87004575FF /* LaunchScreen.storyboard in Resources */,
+				B564D0702416EC87004575FF /* Assets.xcassets in Resources */,
+				B564D082241703DF004575FF /* Podfile in Resources */,
+				B564D06E2416EC80004575FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34BCED640341063326B9F5E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELIChallenge/Pods-MELIChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELIChallenge/Pods-MELIChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MELIChallenge/Pods-MELIChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F3E58C61FACCDD100504CCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MELIChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B564D05C2416EC80004575FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B564D0802416F4CE004575FF /* MLCSearchTableViewCell.m in Sources */,
+				B564D08A24170C52004575FF /* MLCItem.m in Sources */,
+				B564D08D24170C6F004575FF /* MLCDetailedItemViewController.m in Sources */,
+				B564D087241704F1004575FF /* MLCApiClient.m in Sources */,
+				B564D06B2416EC80004575FF /* MLCSearchController.m in Sources */,
+				B564D0652416EC80004575FF /* AppDelegate.m in Sources */,
+				B564D0762416EC87004575FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B564D06C2416EC80004575FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B564D06D2416EC80004575FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B564D0712416EC87004575FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B564D0722416EC87004575FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B564D0772416EC87004575FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B564D0782416EC87004575FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B564D07A2416EC87004575FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F0E1B6353436BD2ED9553A /* Pods-MELIChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BTLW4FJTA7;
+				INFOPLIST_FILE = MELIChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldv.MELIChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B564D07B2416EC87004575FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C16E94078FA5E6D8FB491A /* Pods-MELIChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BTLW4FJTA7;
+				INFOPLIST_FILE = MELIChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldv.MELIChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B564D05B2416EC80004575FF /* Build configuration list for PBXProject "MELIChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B564D0772416EC87004575FF /* Debug */,
+				B564D0782416EC87004575FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B564D0792416EC87004575FF /* Build configuration list for PBXNativeTarget "MELIChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B564D07A2416EC87004575FF /* Debug */,
+				B564D07B2416EC87004575FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B564D0582416EC80004575FF /* Project object */;
+}

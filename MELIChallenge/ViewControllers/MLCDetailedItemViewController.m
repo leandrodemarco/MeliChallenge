@@ -7,26 +7,39 @@
 //
 
 #import "MLCDetailedItemViewController.h"
+#import <SDWebImage/SDWebImage.h>
 
 @interface MLCDetailedItemViewController ()
+
+@property (nonatomic, weak) IBOutlet UIImageView *imgView;
+@property (nonatomic, weak) IBOutlet UILabel *conditionAndSoldLbl;
+@property (nonatomic, weak) IBOutlet UILabel *titleLbl;
+@property (nonatomic, weak) IBOutlet UILabel *priceLbl;
+@property (nonatomic, weak) IBOutlet UILabel *stockAvailableLbl;
 
 @end
 
 @implementation MLCDetailedItemViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  [self setupUI];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupUI {
+  MLCItem *item = self.item;
+  [self.imgView sd_setImageWithURL:[NSURL URLWithString:item.thumbnailURL] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+    if (error) {
+#ifdef DEBUG
+      NSLog(@"Failed to load thumbnail from %@", item.thumbnailURL);
+#endif
+    }
+  }];
+  
+  self.titleLbl.text = item.title;
+  self.priceLbl.text = [NSString stringWithFormat:@"$%lu", item.price];
+  self.stockAvailableLbl.text = item.stock > 0 ? @"Stock disponible" : @"Sin stock";
+  self.conditionAndSoldLbl.text = [NSString stringWithFormat:@"%@ - %lu vendidos", item.conditionStr, item.soldUnits];
 }
-*/
 
 @end

@@ -18,6 +18,7 @@ static const CGFloat prizeLabelHeight = 21.0f;
 @property (nonatomic, weak) IBOutlet UILabel *prizeLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *thumbnailImgView;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *spinner;
+@property (nonatomic, weak) IBOutlet UILabel *freeShippingLabel;
 
 @end
 
@@ -49,19 +50,24 @@ static const CGFloat prizeLabelHeight = 21.0f;
   
   // Title Label
   [self.titleLabel.topAnchor constraintEqualToAnchor:self.thumbnailImgView.topAnchor].active = YES;
-  [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.thumbnailImgView.trailingAnchor constant:16.0f].active = YES;
+  [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.thumbnailImgView.trailingAnchor constant:8.0f].active = YES;
   [self.titleLabel.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor constant:-8.0f].active = YES;
   [self.titleLabel.bottomAnchor constraintEqualToAnchor:self.prizeLabel.topAnchor constant:-8.0f].active = YES;
   
   // Spinner
   [self.spinner.centerXAnchor constraintEqualToAnchor:self.thumbnailImgView.centerXAnchor].active = YES;
   [self.spinner.centerYAnchor constraintEqualToAnchor:self.thumbnailImgView.centerYAnchor].active = YES;
+  
+  // Free shipment label
+  [self.freeShippingLabel.leadingAnchor constraintEqualToAnchor:self.prizeLabel.leadingAnchor].active = YES;
+  [self.freeShippingLabel.topAnchor constraintEqualToAnchor:self.prizeLabel.bottomAnchor constant:8.0f].active = YES;
 }
 
 - (void)configureWithItem:(MLCItem *)item {
-    
+  
   [self.titleLabel setText:item.title];
-  [self.prizeLabel setText:[NSString stringWithFormat:@"%lu", item.price]];
+  [self.prizeLabel setText:[NSString stringWithFormat:@"$%lu", item.price]];
+  self.freeShippingLabel.hidden = !item.freeShipping;
   
   self.spinner.hidden = NO;
   [self.spinner startAnimating];

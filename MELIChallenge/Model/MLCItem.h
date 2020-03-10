@@ -12,7 +12,11 @@
 
 @property (nonatomic, strong, readonly) NSString *title;
 @property (nonatomic, readonly) NSUInteger price;
+@property (nonatomic, strong, readonly) NSString *conditionStr;
 @property (nonatomic, strong, readonly) NSString *thumbnailURL;
+@property (nonatomic, readonly) NSUInteger stock;
+@property (nonatomic, readonly) NSUInteger soldUnits;
+@property (nonatomic, readonly) BOOL freeShipping;
 
 - (instancetype)initWithData:(NSDictionary *)fetchedData;
 

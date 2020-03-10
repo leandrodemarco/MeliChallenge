@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "MLCItem.h"
 
 @interface MLCDetailedItemViewController : UIViewController
 
+@property (nonatomic, strong) MLCItem *item;
+
 @end
 
-NS_ASSUME_NONNULL_END

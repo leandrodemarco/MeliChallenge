@@ -27,6 +27,8 @@
 static NSString *detailedVCIdentifier = @"detailedVCIdentifier";
 - (void)viewDidLoad {
   [super viewDidLoad];
+  self.title = @"MELI Challenge";
+  [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]];
   self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
   self.searchBar.delegate = self;
   self.tableView.delegate = self;
@@ -39,7 +41,7 @@ static NSString *detailedVCIdentifier = @"detailedVCIdentifier";
   UIView *loadingView = [UIView new];
   loadingView.hidden = YES;
   [self.view addSubview:loadingView];
-  loadingView.backgroundColor = [UIColor grayColor];
+  loadingView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.5f];
   
   loadingView.translatesAutoresizingMaskIntoConstraints = NO;
   [loadingView.leadingAnchor constraintEqualToAnchor:self.tableView.leadingAnchor].active = YES;

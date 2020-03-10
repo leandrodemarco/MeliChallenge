@@ -19,6 +19,7 @@
 		B564D087241704F1004575FF /* MLCApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D086241704F1004575FF /* MLCApiClient.m */; };
 		B564D08A24170C52004575FF /* MLCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D08924170C52004575FF /* MLCItem.m */; };
 		B564D08D24170C6F004575FF /* MLCDetailedItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B564D08C24170C6F004575FF /* MLCDetailedItemViewController.m */; };
+		B5FD96652418327800E3D0AE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD96642418327800E3D0AE /* SceneDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		B564D08924170C52004575FF /* MLCItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCItem.m; sourceTree = "<group>"; };
 		B564D08B24170C6F004575FF /* MLCDetailedItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCDetailedItemViewController.h; sourceTree = "<group>"; };
 		B564D08C24170C6F004575FF /* MLCDetailedItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCDetailedItemViewController.m; sourceTree = "<group>"; };
+		B5FD96632418327800E3D0AE /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B5FD96642418327800E3D0AE /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C6724D9ECD06DC425211D396 /* Pods_MELIChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELIChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +104,8 @@
 				B564D07C2416F02B004575FF /* ViewControllers */,
 				B564D0632416EC80004575FF /* AppDelegate.h */,
 				B564D0642416EC80004575FF /* AppDelegate.m */,
+				B5FD96632418327800E3D0AE /* SceneDelegate.h */,
+				B5FD96642418327800E3D0AE /* SceneDelegate.m */,
 				B564D06C2416EC80004575FF /* Main.storyboard */,
 				B564D081241703DF004575FF /* Podfile */,
 				B564D06F2416EC87004575FF /* Assets.xcassets */,
@@ -260,6 +265,7 @@
 				B564D0802416F4CE004575FF /* MLCSearchTableViewCell.m in Sources */,
 				B564D08A24170C52004575FF /* MLCItem.m in Sources */,
 				B564D08D24170C6F004575FF /* MLCDetailedItemViewController.m in Sources */,
+				B5FD96652418327800E3D0AE /* SceneDelegate.m in Sources */,
 				B564D087241704F1004575FF /* MLCApiClient.m in Sources */,
 				B564D06B2416EC80004575FF /* MLCSearchController.m in Sources */,
 				B564D0652416EC80004575FF /* AppDelegate.m in Sources */,

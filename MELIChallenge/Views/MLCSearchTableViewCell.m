@@ -35,6 +35,7 @@ static const CGFloat prizeLabelHeight = 21.0f;
   self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
   self.prizeLabel.translatesAutoresizingMaskIntoConstraints = NO;
   self.spinner.translatesAutoresizingMaskIntoConstraints = NO;
+  self.freeShippingLabel.translatesAutoresizingMaskIntoConstraints = NO;
   
   // Thumbnail Image View
   [self.thumbnailImgView.widthAnchor constraintEqualToConstant:thumbnailSideSize].active = YES;

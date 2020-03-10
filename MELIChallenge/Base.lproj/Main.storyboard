@@ -87,7 +87,6 @@
                     <connections>
                         <outlet property="searchBar" destination="P0v-0K-6yu" id="4OW-cD-7yD"/>
                         <outlet property="tableView" destination="ntv-lm-Pmm" id="Kjp-XU-REv"/>
-                        <segue destination="44h-Fw-IKO" kind="show" identifier="showDetailedProductSegueIdentifier" id="yd0-yf-pPv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -166,6 +165,7 @@
                                             <constraint firstAttribute="trailing" secondItem="0sS-JP-nd6" secondAttribute="trailing" constant="8" id="WyM-es-tV7"/>
                                             <constraint firstAttribute="trailing" secondItem="0Xe-Dd-dTZ" secondAttribute="trailing" constant="8" id="bag-N1-Xyh"/>
                                             <constraint firstAttribute="trailing" secondItem="bZp-JA-tmu" secondAttribute="trailing" constant="8" id="eCk-zD-lcN"/>
+                                            <constraint firstAttribute="bottom" secondItem="iUO-P2-Fcr" secondAttribute="bottom" constant="95" id="gil-7f-S2K"/>
                                             <constraint firstItem="iUO-P2-Fcr" firstAttribute="top" secondItem="0Xe-Dd-dTZ" secondAttribute="bottom" constant="8" id="mOW-XY-0yX"/>
                                             <constraint firstItem="bZp-JA-tmu" firstAttribute="leading" secondItem="Vel-8s-Wr7" secondAttribute="leading" constant="8" id="ptG-hn-1GJ"/>
                                         </constraints>
@@ -177,7 +177,7 @@
                                     <constraint firstItem="Vel-8s-Wr7" firstAttribute="bottom" secondItem="3ne-TA-WzA" secondAttribute="bottom" id="LkF-7m-1au"/>
                                     <constraint firstItem="Vel-8s-Wr7" firstAttribute="trailing" secondItem="3ne-TA-WzA" secondAttribute="trailing" id="XEh-Tn-F9C"/>
                                     <constraint firstItem="Vel-8s-Wr7" firstAttribute="leading" secondItem="3ne-TA-WzA" secondAttribute="leading" id="iWs-3n-9HO"/>
-                                    <constraint firstItem="Vel-8s-Wr7" firstAttribute="height" secondItem="5Db-El-S4r" secondAttribute="height" id="w0n-gy-LaD"/>
+                                    <constraint firstItem="Vel-8s-Wr7" firstAttribute="height" secondItem="5Db-El-S4r" secondAttribute="height" priority="250" id="w0n-gy-LaD"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="3ne-TA-WzA"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="5Db-El-S4r"/>
